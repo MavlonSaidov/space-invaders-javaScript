@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: arial, sans-serif;
+}
+
+.win-label {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: lime;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+          animation: bounce 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.lose-label {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: red;
+}
+
+.score {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #4fd6c1;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid grey;
+  width: 422px;
+  height: 422px;
+  background: #3a3b3c;
+  margin: 10px auto;
+}
+
+.grid div {
+  border: 1px solid #3a3b3c;
+  width: 20px;
+  height: 20px;
+}
+
+.control-btns {
+  margin: 50px 0;
+  padding: 10px;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.control-btns button {
+  background-color: #252b30;
+  outline: none;
+  border: 1px solid #8695a2;
+  color: #4fd6c1;
+  padding: 12px 17px;
+  border-radius: 10px;
+  font-size: 20px;
+  -webkit-box-shadow: 2px 4px 8px 0px #252b30;
+          box-shadow: 2px 4px 8px 0px #252b30;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.control-btns button:active {
+  background: #4fd6c1;
+  color: #252b30;
+}
+
+.control-btns .left-btn {
+  margin-right: 10px;
+}
+
+.instruction {
+  color: grey;
+  text-align: center;
+}
+
+.instruction small {
+  display: block;
+}
+
+.instruction span {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.shooter {
+  background: cyan;
+}
+
+.invader {
+  border-radius: 10px;
+  background-color: #ff06ac;
+}
+
+.boom {
+  background: red;
+}
+
+.laser {
+  background: orange;
+}
+
+@media screen and (max-width: 1280px) {
+  .control-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .instruction {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    width: 359px;
+    height: 359px;
+  }
+  .grid div {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid {
+    width: 296px;
+    height: 296px;
+  }
+  .grid div {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .grid {
+    width: 254px;
+    height: 254px;
+  }
+  .grid div {
+    width: 12px;
+    height: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
